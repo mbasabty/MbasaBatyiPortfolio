@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mbasa Batyi — Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand"><span class="dot"></span> Mbasa.dev</div>
+    <ul class="navlinks">
+      <li><a href="#about">about</a></li>
+      <li><a href="#work">work</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#contact">say hi</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="status-tag"><span class="blip"></span> status: caffeinated, compiling</div>
+  <h1>
+    Hi, I'm Mbasa.<br>
+    I build things that<br>
+    <span class="wobble">mostly<svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M2 8 Q 30 -2, 60 8 T 120 8 T 198 6" fill="none" stroke="#FFF7EA" stroke-width="5" stroke-linecap="round"/></svg></span> work.
+  </h1>
+  <p class="lede">Full-stack developer who ships fast, sweats the small stuff, and occasionally names variables after snacks. Based on the internet, available for freelance and full-time.</p>
+  <div class="cta-row">
+    <a href="#work" class="btn btn-primary">See the work ↓</a>
+    <a href="#contact" class="btn btn-ghost">Say hello</a>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="num">40+</div><div class="label">projects shipped</div></div>
+    <div class="stat"><div class="num">6</div><div class="label">years writing code</div></div>
+    <div class="stat"><div class="num">1,200</div><div class="label">cups of coffee (est.)</div></div>
+    <div class="stat"><div class="num">99.9%</div><div class="label">bugs eventually fixed</div></div>
+  </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <figure class="polaroid">
+      <span class="tape"></span>
+      <img src="images/mbasa.jpg" alt="A photo of Mbasa Batyi">
+      <figcaption>hi, it's me</figcaption>
+    </figure>
+    <div class="about">
+      <div class="eyebrow">about</div>
+      <h2 class="section-title">A little about how I work</h2>
+      <p>I'm a full-stack developer who likes taking messy ideas and turning them into products people actually enjoy using. Most of my work lives somewhere between a well-typed API and a UI that doesn't make you think.</p>
+      <p>Lately I've been deep in React, Node, and a healthy amount of Python for anything data-shaped. I care a lot about fast load times, readable code, and leaving things better than I found them.</p>
+      <p>When I'm not at the keyboard, I'm usually tinkering with a side project, fixing something around the house badly, or arguing about tabs vs. spaces (tabs, obviously).</p>
+    </div>
+    <div>
+      <div class="eyebrow">toolbelt</div>
+      <div class="toolbelt">
+        <span class="chip" style="--r:-2deg">TypeScript</span>
+        <span class="chip" style="--r:1.5deg">React</span>
+        <span class="chip" style="--r:-1deg">Node.js</span>
+        <span class="chip" style="--r:2deg">Python</span>
+        <span class="chip" style="--r:-1.5deg">PostgreSQL</span>
+        <span class="chip" style="--r:1deg">Docker</span>
+        <span class="chip" style="--r:-2deg">AWS</span>
+        <span class="chip" style="--r:1.5deg">GraphQL</span>
+        <span class="chip" style="--r:-1deg">Figma</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="eyebrow">selected work</div>
+    <h2 class="section-title">Projects I'm proud of (mostly)</h2>
+    <p class="section-sub">A handful of things I've built recently — some client work, some late-night side quests.</p>
+
+    <div class="projects-grid">
+
+      <div class="card">
+        <span class="tape"></span>
+        <div class="card-icon icon-pink">◧</div>
+        <h3>TaskFlow</h3>
+        <p>A drag-and-drop project tracker for small teams, built to feel fast even with thousands of tasks.</p>
+        <div class="tag-row">
+          <span class="tag">React</span><span class="tag">Node</span><span class="tag">Postgres</span>
+        </div>
+        <a href="#" class="card-link">View project →</a>
+      </div>
+
+      <div class="card">
+        <span class="tape"></span>
+        <div class="card-icon icon-blue">◐</div>
+        <h3>PixelPaint</h3>
+        <p>A browser-based pixel art editor with layers, palettes, and export to GIF — no install required.</p>
+        <div class="tag-row">
+          <span class="tag">Canvas API</span><span class="tag">TypeScript</span>
+        </div>
+        <a href="#" class="card-link">View project →</a>
+      </div>
+
+      <div class="card">
+        <span class="tape"></span>
+        <div class="card-icon icon-mint">◭</div>
+        <h3>EchoChat</h3>
+        <p>Real-time chat with rooms, reactions, and read receipts, built to handle thousands of concurrent users.</p>
+        <div class="tag-row">
+          <span class="tag">WebSockets</span><span class="tag">Redis</span>
+        </div>
+        <a href="#" class="card-link">View project →</a>
+      </div>
+
+      <div class="card">
+        <span class="tape"></span>
+        <div class="card-icon icon-pink">◫</div>
+        <h3>Recipebox</h3>
+        <p>A recipe manager that scales ingredient amounts automatically and imports recipes from any URL.</p>
+        <div class="tag-row">
+          <span class="tag">Next.js</span><span class="tag">Prisma</span>
+        </div>
+        <a href="#" class="card-link">View project →</a>
+      </div>
+
+      <div class="card">
+        <span class="tape"></span>
+        <div class="card-icon icon-blue">◔</div>
+        <h3>Habitloop</h3>
+        <p>A habit tracker with streaks, gentle nudges, and a dashboard that doesn't guilt-trip you.</p>
+        <div class="tag-row">
+          <span class="tag">React Native</span><span class="tag">SQLite</span>
+        </div>
+        <a href="#" class="card-link">View project →</a>
+      </div>
+
+      <div class="card">
+        <span class="tape"></span>
+        <div class="card-icon icon-mint">◩</div>
+        <h3>ShelfLife</h3>
+        <p>A tiny CLI tool that reminds you what's about to expire in your fridge, using barcode scans.</p>
+        <div class="tag-row">
+          <span class="tag">Python</span><span class="tag">SQLite</span>
+        </div>
+        <a href="#" class="card-link">View project →</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="eyebrow">skills</div>
+    <h2 class="section-title">Sticker sheet of things I know</h2>
+    <p class="section-sub">Peeled off my actual notebook. Not to scale, not in order of importance.</p>
+    <div class="sticker-sheet">
+      <span class="sticker" style="--r:-3deg">JavaScript</span>
+      <span class="sticker" style="--r:2deg">Delphi / Pascal</span>
+      <span class="sticker" style="--r:-1deg">HTML &amp; CSS</span>
+      <span class="sticker" style="--r:3deg">Python</span>
+      <span class="sticker" style="--r:-2deg">SQL</span>
+      <span class="sticker" style="--r:1deg">R Studio</span>
+      <span class="sticker" style="--r:-3deg">SAS Studio</span>
+      <span class="sticker" style="--r:2deg">Microsoft Office</span>
+      <span class="sticker" style="--r:-1deg">Google Workspace</span>
+      <span class="sticker" style="--r:2.5deg">Testing (Jest, Playwright)</span>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <h2>Let's build something.</h2>
+    <p>Got a project, a role, or just a fun idea? My inbox is always open, and I reply faster than my CI pipeline.</p>
+    <a href="mailto:mbasabatyi@icloud.com" class="btn btn-primary">Email me →</a>
+  </div>
+</section>
+
+<footer>
+  built with coffee &amp; semicolons — © 2026 mbasa batyi
+</footer>
+
+</body>
+</html>
