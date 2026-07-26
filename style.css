@@ -87,7 +87,7 @@ nav .wrap{
       rgba(0, 0, 0, 0.2) 60%,
       rgba(0, 0, 0, 0) 100%
     ),
-    url("img/mbasa.jpg");
+    url("images/mbasa.webp");
 
   background-position: 75% center;
   background-size: cover;
