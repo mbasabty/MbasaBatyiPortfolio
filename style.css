@@ -364,10 +364,10 @@ nav .wrap{
   padding:3px 8px;
 }
 .card-link{
-  font-weight:600;font-size:14px;text-decoration:none;
+  font-weight:600;font-size:25px;text-decoration:none;
   display:inline-flex;align-items:center;gap:6px;color:var(--red);
 }
-.card-link:hover{text-decoration:underline;}
+
 
 /* ---------- skills sticker sheet ---------- */
 .sticker-sheet{
