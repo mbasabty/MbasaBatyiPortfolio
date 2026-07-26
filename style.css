@@ -194,7 +194,7 @@ nav .wrap{
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
 .polaroid {
@@ -221,40 +221,29 @@ nav .wrap{
   margin-left: -150px;
 }
 
-.polaroid:nth-child(2) {
-  transform: rotate(5deg);
-  margin-left: 35px;
-}
-.photo-stack .polaroid:nth-child(2) {
-  transform: translateY(-200px) rotate(5deg);
-  margin-left: 35px;
+.photo-stack .polaroid:nth-child(2){
+    transform: rotate(5deg);
+    margin-left:35px;
+    margin-top:-200px;
 }
 
-.polaroid:nth-child(3) {
-  transform: rotate(-4deg);
-  margin-left: -180px;
+.photo-stack .polaroid:nth-child(3){
+    transform: rotate(10deg);
+    margin-left:-180px;
+    margin-top:-70px;
 }
 
-.photo-stack .polaroid:nth-child(3) {
-  transform: translateY(-270px) rotate(10deg);
-  margin-left: -180px;
-}
-
-.polaroid:nth-child(4) {
-  transform: rotate(-5deg);
-  margin-left: 20px;
-}
-
-.photo-stack .polaroid:nth-child(4) {
-  transform: translateY(-470px) rotate(-6deg);
-  margin-left: 20px;
+.photo-stack .polaroid:nth-child(4){
+    transform: rotate(-6deg);
+    margin-left:20px;
+    margin-top:-200px;
 }
 
 .photo-stack {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  align-items: flex-start;
+  /* align-items: flex-start; */
 }
 
 .about p{font-size:16px;
@@ -262,6 +251,31 @@ nav .wrap{
          margin-bottom:16px;
          text-align:justify;
         }
+
+.education-list{
+    display:flex;
+    flex-direction:column;
+    gap:1.2rem;
+    margin-top:0.5rem;
+}
+
+.education-card{
+    background:#fff;
+    padding:0.5rem 0.5rem;
+    border-radius:16px;
+    border:2px solid #111;
+    box-shadow:6px 6px 0 #111;
+}
+
+.education-card h3{
+    margin:0 0 .1rem;
+    font-size:1.15rem;
+}
+
+.education-card p{
+    margin:.35rem 0;
+    line-height:1.6;
+}
 .toolbelt{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px;}
 .chip{
   font-family:'JetBrains Mono',monospace;font-size:13px;
