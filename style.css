@@ -337,7 +337,7 @@ footer{
     background:
       linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),
       url("images/mbasa.webp");
-    background-position:center center;
+    background-position:70% center;
     background-size:cover;
     background-repeat:no-repeat;
   }
@@ -354,7 +354,7 @@ footer{
 
   .brand{font-size:1.25rem;}
 
-  .hero{padding:72px 0 56px;background-position:center center;}
+  .hero{padding:72px 0 56px;background-position:65% center;}
   .hero h1{font-size:clamp(28px,8vw,40px);}
   .hero .wrap{padding-left:18px;padding-right:18px;}
   .hero p.lede{margin:20px 0 28px;}
@@ -412,34 +412,18 @@ p,
   .wrap .cta-row,
   .wrap .status-tag{justify-content:center;}
 
-  /* Nav: one compact line (brand + links), swipe sideways if it ever overflows */
-  nav{border-bottom-width:2px;}
-  nav .wrap{
-    flex-direction:row;flex-wrap:nowrap;
-    align-items:center;justify-content:space-between;
-    gap:8px;padding:4px 12px;
-  }
-  .brand{font-size:0.95rem;gap:6px;flex-shrink:0;}
-  .brand span{font-size:0.95rem;}
-  .brand-logo{width:32px;height:16px;margin-right:4px;}
-  .dot{width:10px;height:10px;}
+  /* Nav: brand and links centred, links wrap instead of scrolling so none get cut off */
+  nav .wrap{flex-direction:column;align-items:center;justify-content:center;gap:4px;}
+  .brand{justify-content:center;}
   .navlinks{
-    flex:1;min-width:0;width:auto;
-    flex-wrap:nowrap;
-    justify-content:safe center;
-    overflow-x:auto;
-    gap:12px;
-    -webkit-overflow-scrolling:touch;
-    scrollbar-width:none;
+    flex-wrap:wrap;
+    justify-content:center;
+    overflow-x:visible;
+    gap:4px 20px;
+    width:100%;
   }
-  .navlinks::-webkit-scrollbar{display:none;}
-  .navlinks a{font-size:12px;padding:6px 0;}
-  .navlinks a::after{height:2px;bottom:3px;}
 
   .hero .wrap{text-align:center;}
-  .photo-stack{align-items:center;justify-content:center;width:100%;}
-  .photo-stack .polaroid{margin-left:auto;margin-right:auto;}
-  .polaroid img{object-position:center center;}
   .hero p.lede{margin-left:auto;margin-right:auto;text-align-last:center;}
   .hero .cta-row{justify-content:center;}
 
